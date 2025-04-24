@@ -1,0 +1,31 @@
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environment
+myenv/
+.env/
+.venv/
+.myenv/
+
+# Ignore large files and datasets
+*.pdf
+*.zip
+*.tar.gz
+*.pt
+*.pth
+*.h5
+*.ckpt
+*.onnx
+*.joblib
+*.csv
+*.xlsx
+*.json
+*.log
+
+# VSCode and OS files
+.vscode/
+.DS_Store
+
+# Codespaces stuff
+*.code-workspace
