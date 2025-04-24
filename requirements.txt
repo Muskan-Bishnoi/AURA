@@ -1,0 +1,32 @@
+# FastAPI + Uvicorn
+fastapi
+uvicorn[standard]
+
+# DNA Parsing & Data Science
+pandas
+numpy
+biopython  # optional for DNA sequence parsing
+
+# Emotion Analysis
+transformers
+torch
+textblob
+
+# Whisper for Speech to Text
+openai-whisper
+ffmpeg-python
+
+# Database
+sqlalchemy
+databases
+sqlite-utils
+
+# Async tasks
+aiofiles
+python-multipart
+
+# Optional - FAISS for semantic matching
+faiss-cpu
+
+# For Dev
+python-dotenv
