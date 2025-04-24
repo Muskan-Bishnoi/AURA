@@ -16,15 +16,30 @@ AURA is an AI-powered scheduling tool that blends **task management** with **wel
 
 ## 🗂 Project Structure
 
-AURA/ 
+aura_project/
+│
 ├── app/
-│ ├── main.py # FastAPI entry point 
-│ ├── routes/
-│ │ ├── tasks.py # Task creation & fetching 
-│ │ ├── wellness.py # Wellness creation & full schedule logic
-│ └── models/ 
-│   ├── task_model.py # Task schemas 
-│   └── wellness_model.py # Wellness schemas 
-├── .gitignore 
-├── requirements.txt 
+│   ├── main.py              # FastAPI entry point
+│   ├── routes/
+│   │   ├── dna.py           # Upload & parse genetic data
+│   │   ├── emotions.py      # Upload voice/text & analyze emotion
+│   │   ├── wellness.py      # Generate recommendations
+│   ├── services/
+│   │   ├── dna_parser.py    # Extract traits from DNA (CSV)
+│   │   ├── emotion_ai.py    # Emotion detection using models
+│   │   ├── planner.py       # Adaptive suggestion engine
+│   ├── models/
+│   │   └── schemas.py       # Pydantic models
+│   ├── database/
+│   │   └── db.py            # DB connection
+│   └── utils/
+│       └── logger.py        # Optional: for logging/debugging
+│
+├── data/
+│   ├── example_dna.csv      # Sample 23andMe file
+│   └── emotion_logs.json    # User emotion logs (text/audio info)
+│
+├── requirements.txt
 └── README.md
+
+
